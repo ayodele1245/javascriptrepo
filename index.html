@@ -12,7 +12,18 @@
         <h1>Sanni's Journal</h1>
         <h2 >So fresh and so clean</h2>
     </header>
+        <div class="btn">
+        <button type="button" onclick="myFunction()">Add a new note</button>
+        <p id="comment"></p>
+        </div>
     <main>
+        <article class="upper">
+            <h2>date: Spatulas</h2>
+            <p><span class="spatula"><img src="img/spatula.gif" alt="spatulas"></span></p>
+            <p>
+                Yesterday I went to the store and got some much-needed <a href="https://www.youtube.com/watch?v=2XbCWmY0eqY">spatulas!</a> (What better way to say I love myself than to buy myself a spatula?)
+            </p>
+        </article>
         <article class="upper">
             <h2>13/05/23: Spatulas</h2>
             <p><span class="spatula"><img src="img/spatula.gif" alt="spatulas"></span></p>
@@ -41,7 +52,17 @@
     </form>
     <p>&copy; 2023 Sanni. No Rights Reserved.</p>
     </footer>
-
+<script>
+     var articles = document.getElementsByTagName("article");
+     function myFunction(){document.getElementById("comment").innerHTML="You have"+" "+ articles.length+" "+"notes";
+     var addArticles = prompt("Write your note:", " " );
+    if (addArticles != null) {document.getElementsByTagName("article").innerHTML=addArticles++;
+        
+    }
+   
+   
+}
+</script>
 </body>
 
 </html>
