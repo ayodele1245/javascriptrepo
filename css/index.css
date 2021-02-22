@@ -55,7 +55,27 @@ form p{
 
 .spatula img{
     left: 970px; 
-    top: 150px;
+    top: 220px;
     position: absolute;
 }
     
+
+button{   
+    
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 3px 3px 0 0 #e4572e;
+    font-family:  'Gamja Flower', cursive;
+    cursor: pointer; 
+    color:white;
+    background-color: black;
+    
+    }
+
+    .btn{
+        text-align: center;
+    }
+/*    
+border: none;
+color: black;
+*/
